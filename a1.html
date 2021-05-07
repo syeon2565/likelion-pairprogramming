@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Kakao 지도 시작하기</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div id="one">
+    <a href="index.html">Home 돌아가기</a>
+    <div id="map" style="width:400px;height:300px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=myAppKey"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.31858703032525, 127.95938779794791),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+
+  <ul>공기 좋고 물 맑은 저희 집 앞에 있는 공원이랍니다!</ul>
+  <div>
+    <img src="my.jpg" alt="sorry" width="100px" height="100px">
+  </div>
+
+  <div>
+    <ul>이름 : 문서연</ul>
+    <ul>학과 : 컴퓨터공학과</ul>
+    <ul>나이 : 22살</ul>
+    <ul>취미 : 피아노치기 공놀이하기 책읽기</ul>
+    <ol>
+      <li>파스타</li>
+      <li>새우</li>
+      <li>영화보기</li>
+    </ol>
+    <ul>오늘 하면서 느낀점 : live server가 작동하지 않아 사우나에 갔을 때보다 더 땀을 흘린 것 같지만 좋으신 팀원분과 멘토님의 도움 덕분에 잘 해결할 수 있었습니다! ♡ 감사합니다!</ul>
+  </div>
+  </div>
+	
+
+</body>
+
+</html>

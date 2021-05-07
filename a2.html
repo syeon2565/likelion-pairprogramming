@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>유성연 자기소개</title>
+</head>
+<body>
+  <div class="profile">
+  <h1>Profile</h1>
+    <a href="index.html">Home로 돌아가기</a>
+  <img src="me.jpg" alt="내 사진" width="500"> <br>
+    <ul>
+      <li>이름: 유성연</li>
+      <li>학과: 정보통신공학과</li>
+      <li>나이: 23살</li>
+      <li>취미: 유튜브 보기</li>
+      </ul>
+      <ol>
+        <li>좋아하는 활동 및 음식</li>
+        <li>요리</li>
+        <li>산책</li>
+        <li>자취방 인테리어</li>
+      </ol>
+      <ul>
+        <li>오늘하면서 느낀점!</li>
+        <li>자기소개 페이지는 쉬울줄 알았으나.. 시간이 있어서 어려웠어요 ㅠㅠ ! </li>
+        <li>전공자여도 이정도밖에 못하여 더 열심히해야겠다고 느꼇습니다..</li>
+      </ul>
+      <p>저의 본가는!! 전라남도 무안군에 위치하고있습니다!</p>
+	<div id="map" style="width:500px;height:400px;"></div>
+
+  <p>하지만 무안군보다 목포를 더 잘 알고 많이다녀서 무안보단 목포사람이라고 하고 있답니다..!</p>
+</div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=myAppKey"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(34.8110684886706, 126.48076309603242),
+			level: 3
+		};
+		var map = new kakao.maps.Map(container, options);
+
+	</script>
+  
+  <style>
+    a{
+      text-decoration: none;
+      color: #777;
+      background-color: rgb(232, 255, 169);
+      border-radius: 2rem;
+    }
+  body{
+    margin: 0;
+    background-color: rgba(255, 164, 187, 0.527);
+  }
+    h1{
+      color: #d290ff;
+      font-size: 45px;
+      text-align: center;
+    }
+    img{
+      clip-path: circle(50% at 50% 50%);
+    }
+    li{
+      list-style: none;
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+    }
+    ul{
+      font-size: 30px;
+    }
+    .profile{
+      text-align: center;
+    }
+    p{
+      font-size: 20px;
+    }
+    #map{
+      display: inline-block;
+    }
+  </style>
+</body>
+</html>
